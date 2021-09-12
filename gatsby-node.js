@@ -14,11 +14,12 @@ exports.onCreateWebpackConfig = (
 
           if (
             test &&
-            test.toString() === '/\\.(ico|svg|jpg|jpeg|png|gif|webp)(\\?.*)?$/'
+            test.toString() ===
+              '/\\.(ico|svg|jpg|jpeg|png|gif|webp|avif)(\\?.*)?$/'
           ) {
             return {
               ...item,
-              test: /\.(ico|jpg|jpeg|png|gif|webp)(\?.*)?$/,
+              test: /\.(ico|jpg|jpeg|png|gif|webp|avif)(\?.*)?$/,
             }
           }
 
